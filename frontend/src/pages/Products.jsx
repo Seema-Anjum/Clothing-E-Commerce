@@ -4,6 +4,7 @@ import ProductCard from "../components/ProductCard";
 import { useNavigate } from "react-router-dom";
 import Filters from "../components/Filters";
 import "../styles/store.css";
+import "../styles/pagination.css";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
