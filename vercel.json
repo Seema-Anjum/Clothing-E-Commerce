@@ -4,13 +4,6 @@
     { "src": "frontend/package.json", "use": "@vercel/static-build" }
   ],
   "routes": [
-    // Serve favicon directly
-    { "src": "/favicon.ico", "dest": "/frontend/build/favicon.ico" },
-
-    // Serve other static assets (JS/CSS)
-    { "src": "/static/(.*)", "dest": "/frontend/build/static/$1" },
-
-    // Catch-all: let React Router handle other routes
-    { "src": "/(.*)", "dest": "/frontend/build/index.html" }
+    { "src": "/(.*)", "dest": "frontend/index.html" }
   ]
 }
