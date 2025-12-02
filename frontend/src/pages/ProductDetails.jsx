@@ -53,7 +53,7 @@ export default function ProductDetails() {
   return (
     <div className="product-details">
       <img
-        src={`http://localhost:5000${product.imageUrl}`}
+        src={`https://e-commerce-backend-pxls.onrender.com${product.imageUrl}`}
         alt={product.name}
         className="product-image" width="250px" height="300px"
 
