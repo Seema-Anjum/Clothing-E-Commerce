@@ -20,6 +20,9 @@ export default function Products() {
   // navigate
   const navigate = useNavigate();
 
+   useEffect(() => {
+    loadProducts();
+  }, [page]);
 
   const loadProducts = async () => {
     try {
@@ -35,9 +38,6 @@ export default function Products() {
       alert("Failed to load products");
     }
   };
-  useEffect(() => {
-    loadProducts();
-  }, [page]);
 
   const applyFilters = () => {
     setPage(1); // Reset to first page
